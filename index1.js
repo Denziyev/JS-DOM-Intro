@@ -1,8 +1,21 @@
-document.body.innerHTML=`
-  <div style="  margin-top:270px; width:100%; align-items:center;">
-     <p style="font-size:40px; font-weight:bold; text-align:center;">Hello everyone</p>
-    </div>
-`;
+// document.body.innerHTML=`
+//   <div style="  margin-top:270px; width:100%;">
+//      <p style="font-size:40px; font-weight:bold; text-align:center;">Hello everyone</p>
+//     </div>
+// `;
+
+const newdiv=document.createElement("div");
+document.body.append(newdiv);
+const newptag=document.createElement("p");
+newptag.textContent="Hello everyone";
+newdiv.append(newptag);
+
+newdiv.style.marginTop="270px";
+newdiv.style.width="100%";
+newptag.style.fontSize="40px";
+newptag.style.fontWeight="bold";
+newptag.style.textAlign="center";
+
 
 
     setTimeout(()=>{
